@@ -1,0 +1,1 @@
+the result of combine two txt files is:this is first text file this is second txt file the result of combine two txt files is:this is first text file this is second txt filethe result of combine two txt files is:this is first text file this is the second text file

@@ -1,0 +1,20 @@
+const http = require('http');
+const app = http.createServer((req, res) => {
+    //console.log(req);
+    if (req.url === '/') {
+        res.end('welcome to homepage');
+    }
+    else if (req.url === '/about') {
+        res.end('this is a short story about node');
+    }
+    else {
+        res.setHeader('Content-Type', 'text/html');
+        res.end(`
+    <h1>!OOPS</h1>
+    <h3>we can't able to find the page</h3>
+    <a href="/">back to home</a>
+    `
+        )
+    }
+})
+app.listen(3000); 
